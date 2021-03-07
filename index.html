@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CV User Name</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        <img src="images/foto.jpg" alt="My photo">
+      </div>
+      <div class="header-title">
+        <h1>User Name</h1>
+      </div>
+      <div class="header-contact">
+        <p>Contact info:</p>
+        <ul>
+          <li class="contact-mail transition">
+            <a href="mailto:User.Name@gmail.com">user.name@gmail.com</a>
+          </li>
+          <li class="contact-mail transition">
+            <a href="tel:+375000000000">+375ХХХХХХХХХ</a>
+          </li>
+          <li class="contact-phone transition">
+            <a href="https://t.me/userName_346356345">Telegram</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <main class="about">
+        <h2>About me:</h2>
+        <p>My goal is to deeply explore the JavaScript
+          and related technologies. I like to reveal my
+          potential and work in progressive companies.
+          I like to watch the world around me change
+          and keep up with it.</p>
+        <h3>My job requirements:</h3>
+        <ul>
+          <li>good working conditions</li>
+          <li>decent wages</li>
+          <li>healthy and friendly team atmosphere</li>
+          <li>feedback with the head</li>
+          <li>opportunity for career growth</li>
+          <li>of course coffee and cookies</li>
+        </ul>
+      </main>
+      <section class="skills">
+        <h2>My skills:</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+          <li>Git</li>
+        </ul>
+      </section>
+      <section class="code">
+        <h2>Code example:</h2>
+        <pre>function findDup(arr) {
+        let duplicateValue;
+        arr.sort().find((element, index) => {
+          if (arr[index] === arr[index + 1]) {
+            duplicateValue = arr[index];
+          }
+        });
+        return duplicateValue;
+        }</pre>
+      </section>
+      <section class="expiriens">
+        <h2>Expiriens:</h2>
+        <ul>
+          <li>In 2019, together with my friend, I made a
+            small project for my work. The task was to
+            implement a database information search.
+            Source code: <a href="https://github.com/dzmitry-duboyski/Search-database">www.github.com</a></li>
+          <li>Profile <a href="https://github.com/dzmitry-duboyski/">www.github.com</a></li>
+          <li>Profile <a href="https://www.codewars.com/users/Demon666">www.codewars.com</a></li>
+        </ul>
+      </section>
+      <section class="education">
+        <h2>Education:</h2>
+        <ul>
+          <li>BarSU 2011-2017 (Software engineer)</li>
+          <li><a href="https://www.codecademy.com/profiles/dzmitryDuboyski1787734880">www.codecademy.com</a></li>
+          <li><a href="https://www.codewars.com/users/Demon666">www.codewars.com</a></li>
+        </ul>
+      </section>
+      <section class="english">
+        <h2>English:</h2>
+        <p>2018 - 2019 Course Streamline language scool - A1 starter (9 month)</p>
+      </section>
+    </div>
+  <footer class="footer">
+    <p class='year'></p>
+  </footer>
+  </div>
+  <script>
+    let year = new Date().getFullYear();
+    document.querySelector('.year').textContent = year;
+  </script>
+</body>
+</html>
